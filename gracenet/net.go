@@ -244,6 +244,7 @@ func (n *Net) StartProcess() (int, error) {
 	if err != nil {
 		return 0, err
 	}
+	process.Release()
 	return process.Pid, nil
 }
 
